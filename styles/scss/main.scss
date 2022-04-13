@@ -8,6 +8,10 @@
   --font-inter: "Inter", sans-serif;
 }
 
+:root .active {
+  --bg-color: var(--primary-color);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,10 +25,15 @@ body {
   overflow: hidden;
 }
 
+.container {
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
 .dark-mode {
   background-color: white;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 1.675rem;
 
   position: relative;
@@ -44,6 +53,10 @@ body {
     bottom: 65px;
   }
 
+  .fa-sun {
+  display: none;
+  }
+
   i {
     color: var(--primary-color);
   }
@@ -60,6 +73,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   
   animation: .5s fadein;
 
@@ -83,14 +97,14 @@ header {
 .task-container {
   display: grid;
   place-items: center;
-
-  margin-top: 0.4rem;
+ 
 
   height: 29.75rem;
 
   .task-input {
     width: 30.375rem;
     height: 2.188rem;
+    margin-top: 0.4rem;
 
     display: flex;
     justify-content: center;
@@ -174,9 +188,6 @@ header {
 
         margin: 0 auto;
 
-      
-        
-
         .task-content {
           display: flex;
 
@@ -189,7 +200,7 @@ header {
 
             &::before {
               content: "";
-              background-color: var(--bg-color);
+              background-color: #e3e3e3;
               width: 0.8rem;
               height: 0.8rem;
             }
@@ -233,6 +244,16 @@ header {
             color: var(--primary-color);
             font-size: 0.875rem;
           }
+
+          .update-task {
+            font-family: var(--font-overpass);
+            align-self: center;
+            color: var(--primary-color);
+            font-size: 0.875rem;
+
+            border: none;
+            outline: none;
+          }
         }
 
         .task-menu {
@@ -271,6 +292,10 @@ header {
     width: 32rem;
   }
 }
+.smooth {
+  transition: ease-in .3s;
+}
+
 
 .fadeIn {
   animation: fadein 1.2s;

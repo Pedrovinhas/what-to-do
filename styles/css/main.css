@@ -7,6 +7,10 @@
   --font-inter: "Inter", sans-serif;
 }
 
+:root .active {
+  --bg-color: var(--primary-color);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,10 +24,15 @@ body {
   overflow: hidden;
 }
 
+.container {
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
 .dark-mode {
   background-color: white;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 1.675rem;
   position: relative;
   top: -60px;
@@ -44,6 +53,10 @@ body {
 
 .dark-mode:hover {
   bottom: 65px;
+}
+
+.dark-mode .fa-sun {
+  display: none;
 }
 
 .dark-mode i {
@@ -87,13 +100,13 @@ header h1 span:nth-child(2) {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-top: 0.4rem;
   height: 29.75rem;
 }
 
 .task-container .task-input {
   width: 30.375rem;
   height: 2.188rem;
+  margin-top: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +209,7 @@ header h1 span:nth-child(2) {
 
 .task-container .tasks .task-list .task-item .task-content input[type="checkbox"]::before {
   content: "";
-  background-color: var(--bg-color);
+  background-color: #e3e3e3;
   width: 0.8rem;
   height: 0.8rem;
 }
@@ -234,6 +247,17 @@ header h1 span:nth-child(2) {
   font-size: 0.875rem;
 }
 
+.task-container .tasks .task-list .task-item .task-content .update-task {
+  font-family: var(--font-overpass);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+}
+
 .task-container .tasks .task-list .task-item .task-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,6 +292,11 @@ header h1 span:nth-child(2) {
   header {
     width: 32rem;
   }
+}
+
+.smooth {
+  -webkit-transition: ease-in .3s;
+  transition: ease-in .3s;
 }
 
 .fadeIn {
