@@ -14,5 +14,5 @@
 - [X] Dark-mode
 - [ ] Animações ao adicionar e apagar tarefas
 - [ ] Atualizar tarefas
-- [X] Darkmode
+- [X] Dark-mode
 - [X] Responsividade para todos os dispositivos

@@ -54,7 +54,7 @@ body {
   }
 
   .fa-sun {
-  display: none;
+    display: none;
   }
 
   i {
@@ -74,8 +74,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  
-  animation: .5s fadein;
+  animation: 0.5s fadein;
 
   h1 {
     color: white;
@@ -97,7 +96,6 @@ header {
 .task-container {
   display: grid;
   place-items: center;
- 
 
   height: 29.75rem;
 
@@ -289,13 +287,36 @@ header {
 
 @media screen and (max-width: 500px) {
   header {
-    width: 32rem;
+    width: 100%;
+    
+  }
+
+
+
+  .container {
+    .task-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      
+
+      .task-input {
+        width: 90%;
+      }
+
+      .tasks {
+        width: 90%;
+      }
+    }
   }
 }
-.smooth {
-  transition: ease-in .3s;
-}
 
+.smooth {
+  transition: ease-in 0.3s;
+}
 
 .fadeIn {
   animation: fadein 1.2s;
