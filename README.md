@@ -28,7 +28,6 @@ Você pode conferir o layout no Figma através desse [link](https://www.figma.co
 - [X] Estado de tarefa concluída
 - [X] Armazenar tarefas no Local Storage
 - [X] Dark-mode
-- [X] Dark-mode
 - [X] Responsividade para todos os dispositivos
 - [ ] Animações ao adicionar e apagar tarefas
 - [ ] Atualizar tarefas
@@ -47,5 +46,9 @@ $ code .
 
 # Rode a aplicação com o Live Server
 ```
+
+## 📝 License
+Esse projeto é licenciado pela MIT License. Veja mais detalhes por [aqui](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT)
+
 ---
 <blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>
