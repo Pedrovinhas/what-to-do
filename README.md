@@ -1,8 +1,9 @@
-<div  align="center">
+<p  align="center">
     <img  margin-bottom= '200px' src='./assets/logo.svg'>
-</div>
+</p>
 
  <p align='center'>
+    <img src="https://img.shields.io/github/stars/pedrovinhas/what-to-do?label=stars&message=MIT&color=fd6916&labelColor=3d3d4d" alt="stars">
     <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=fd6916&labelColor=3d3d4d%22" alt="License">
 </p>
 
@@ -46,3 +47,5 @@ $ code .
 
 # Rode a aplicação com o Live Server
 ```
+---
+<blockquote> Feito por Pedro Henrique Vinhas 🪐 </blockquote>
