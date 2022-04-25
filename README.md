@@ -4,7 +4,7 @@
 
  <p align='center'>
     <img src="https://img.shields.io/github/stars/pedrovinhas/what-to-do?label=stars&message=MIT&color=fd6916&labelColor=3d3d4d" alt="stars">
-    <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=fd6916&labelColor=3d3d4d%22" alt="License">
+    <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=fd6916&labelColor=3d3d4d" alt="License">
 </p>
 
 <div  align='center'>
